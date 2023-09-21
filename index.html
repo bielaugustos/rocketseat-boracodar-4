@@ -1,73 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/phosphor-icons"></script>
-    <script src="/script.js"></script>
-    <title>um chat</title>
-  </head>
-  <body>
-    <div class="app">
-      <div class="contact">
-        <div class="contact-info">
-          <div class="avatar-tag">
-            <!-- AVATAR IMG -->
-            <!-- <figure class="circle-avatar"></figure> -->
-            <img
-              src="https://source.unsplash.com/random/?person"
-              alt=""
-              srcset=""
-            />
-            <!-- NAME AND STATUS -->
-            <div class="person">
-              <h1>jessie doe</h1>
-              <div class="status">
-                <figure class="circle-status"></figure>
-                <p>online</p>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=2.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="/script.js"></script>
+  <title>um chat</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="contact">
+      <div class="contact-info">
+        <div class="avatar-tag">
+          <!-- AVATAR IMG -->
+          <!-- <figure class="circle-avatar"></figure> -->
+          <img src="https://source.unsplash.com/random/?person" alt="" srcset="" />
+          <!-- NAME AND STATUS -->
+          <div class="person">
+            <h1>fulano</h1>
+            <div class="status">
+              <figure class="circle-status"></figure>
+              <p>online</p>
             </div>
           </div>
-          <!-- CLOSE BUTTON -->
-          <i class="ph-x-bold" id="close"></i>
         </div>
-        <!-- DATE TIME -->
-        <p class="date-time">hoje 11:11</p>
+        <!-- CLOSE BUTTON -->
+        <i class="ph-x-bold" id="close"></i>
       </div>
-      <div class="messages scroll">
-        <div class="chat" id="left">
-          <p class="name-time">jessie doe - 11:11</p>
-          <p class="message">qual é o segredo da felicidade? &#128512;</p>
-        </div>
-        <div class="chat" id="right">
-          <p class="name-time">você - 11:33</p>
-          <p class="message">
-            não fazer post de política nem comentar no dos outros.
-          </p>
-        </div>
-        <div class="chat" id="left">
-          <p class="name-time">jessie doe - 11:34</p>
-          <p class="message">
-            mas seria correto ignorar tudo de errado que vemos no dia a dia?
-          </p>
-        </div>
-        <div class="chat" id="right">
-          <p class="name-time">você - 11:44</p>
-          <p class="message">você quer ser feliz ou correto, ô c@r@1h0? &#128548 &#128545</p>
-        </div>
+      <!-- DATE TIME -->
+      <p class="date-time">hoje <strong>11:11</strong></p>
+    </div>
+    <div class="messages scroll">
+      <div class="chat" id="left">
+        <p class="name-time">fulano</p>
+        <p class="message">qual é o segredo da felicidade? &#128512
+          </br> <strong>11:11</strong>
+        </p>
+
       </div>
-      <div class="message-input">
-        <input type="text" placeholder="Digite sua mensagem" onclick="getVal()"/>
-        <i class="ph-paper-plane-right-bold"></i>
+      <div class="chat" id="right">
+        <p class="name-time">você</p>
+        <p class="message">
+          não fazer post de política nem comentar no dos outros.
+          </br> <strong>11:33</strong>
+        </p>
+      </div>
+      <div class="chat" id="left">
+        <p class="name-time">fulano</p>
+        <p class="message">
+          mas seria correto ignorar tudo de errado que vemos no dia a dia?
+          </br> <strong>11:34</strong>
+        </p>
+      </div>
+      <div class="chat" id="right">
+        <p class="name-time">você</p>
+        <p class="message">você quer ser feliz ou correto, ô c@r@1h0? &#128548 &#128545
+          </br> <strong>11:44</strong> </p>
       </div>
     </div>
-  </body>
+    <div class="message-input">
+      <input type="text" placeholder="Digite sua mensagem" onclick="getVal()" />
+      <i class="ph-paper-plane-right-bold"></i>
+    </div>
+  </div>
+</body>
+
 </html>

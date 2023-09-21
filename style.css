@@ -7,7 +7,7 @@
 body {
   background-color: #1a1924;
   color: #e1e1e6;
-  font-family: 'Roboto';
+  font-family: 'Poppins';
   display: flex;
   height: 100vh;
   align-items: center;
@@ -96,12 +96,14 @@ img {
   margin-right: 10px;
 }
 
+
 .messages {
   display: grid;
   gap: 32px;
   margin-bottom: 30px;
   height: 370px;
   overflow-y: scroll;
+  
 }
 
 .scroll::-webkit-scrollbar {
@@ -140,7 +142,7 @@ img {
   padding: 14px;
   gap: 10px;
   width: fit-content;
-  height: 42px;
+  height: 55px;
   background: #07847e;
   border-radius: 8px 8px 0px 8px;
   margin-left: auto;
@@ -150,7 +152,7 @@ img {
   padding: 14px;
   gap: 10px;
   width: fit-content;
-  height: 42px;
+  height: 55px;
   background: #633bbc;
   border-radius: 0px 8px 8px 8px;
 }
@@ -167,6 +169,13 @@ img {
   font-size: 24px;
   position: absolute;
   padding-right: 20px;
+}
+
+
+strong{
+  margin-top: 5px;
+  font-size: 8px;
+
 }
 
 input,
